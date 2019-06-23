@@ -8,4 +8,14 @@ $resultado_excluir = "delete from tb_livraria where CNPJ_Livraria = '$CNPJ_Livra
 
 $resultado = mysqli_query($conn, $resultado_excluir);
 
+if ($resultado == True) {
+	if($total = msql_num_rows($resultado)){
+	echo "<center><h1>Exclusão efetuado com sucesso! $total </h1>";
+}
+}else{
+echo "<center><h1>Erro ao efetuar a Exclusão!</h1>";
+}
 ?>
+<a href="tela_2_opcao.php">Voltar ao menu de Opções</a><br><br>
+<a href="tela_5_Excluir_livraria.php">Voltar ao menu de Exclusão</a>
+</div>

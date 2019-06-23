@@ -1,3 +1,4 @@
+<div align="center">
 <?php
 
 include_once("conexao.php");
@@ -10,4 +11,12 @@ $Telefone_livraria = filter_input(INPUT_POST, 'Telefone_livraria', FILTER_SANITI
 $resultado_cadastro = "INSERT INTO tb_livraria VALUES ('$Nome_livraria', '$CNPJ_livraria', '$Endereco_livraria', '$Telefone_livraria')";
 $resultado = mysqli_query($conn, $resultado_cadastro);
 
-header("Location: tela_2_opcao.php");
+if ($resultado) {
+echo "<center><h1>cadastro efetuado com sucesso!</h1>";
+}else{
+echo "<center><h1>Erro ao efetuar o cadastro!</h1>";
+}
+?>
+<a href="tela_2_opcao.php">Voltar ao menu de Opções</a><br><br>
+<a href="tela_3_cadastrar_livraria.php">Voltar ao menu de Cadastro</a>
+</div>

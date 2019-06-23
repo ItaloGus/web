@@ -4,7 +4,7 @@
 	<title>Livraria</title> 
 </head>
 <body>
-	<p>Projeto está no repositorio do github segue link -> <a href="https://github.com/ItaloGus">Projeto</a></p>
+	<p>Projeto está no repositorio do github segue link -> <a href="https://github.com/ItaloGus/web">Projeto</a></p>
 	
 	<div align="center">
 	<img src="imagens/1_logo.jpg">

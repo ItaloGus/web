@@ -5,7 +5,7 @@
 </head>
 <body>
 	<div align="center">
-		<img src="1_logo.jpg">
+		<img src="imagens/1_logo.jpg">
 
 		<form action="_inserir_dados_livros.php" method="post">
 		<label>Nome</label><br>
