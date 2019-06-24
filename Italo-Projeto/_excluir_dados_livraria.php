@@ -5,11 +5,12 @@ include_once("conexao.php");
 $CNPJ_Livraria = filter_input(INPUT_POST, 'CNPJ_Livraria', FILTER_SANITIZE_STRING);
 
 $resultado_excluir = "delete from tb_livraria where CNPJ_Livraria = '$CNPJ_Livraria'" ;
+$resultado_busca = "select from tb_livraria where CNPJ_Livraria = '$CNPJ_Livraria'" ;
 
 $resultado = mysqli_query($conn, $resultado_excluir);
 
 if ($resultado == True) {
-	if($total = msql_num_rows($resultado)){
+	if($total = msql_num_rows($resultado_busca)){
 	echo "<center><h1>Exclusão efetuado com sucesso! $total </h1>";
 }
 }else{
