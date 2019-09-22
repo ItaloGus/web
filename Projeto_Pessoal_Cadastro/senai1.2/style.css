@@ -1,0 +1,74 @@
+header{
+	font-family: "comic sans ms";
+	margin: 0;
+	padding: 0;
+	font-size: 32px;
+	background-color: #0559A4;
+	text-shadow: 1px 1px 1px #111111;
+	height: 50px;
+}
+/*#696969 cinza-escuro*/
+footer{
+	clear: both;
+	background-color: white;
+	text-align: center;
+	margin: 1px;
+	font-size: 12px;
+	color: #696969;
+}
+
+body{
+	font-family: "comic sans ms";
+	background-color: rgb(255, 255, 255);
+}
+
+p{
+	text-shadow: 1px 1px 1px #111111;
+	text-align: center;
+	font-size: 20px;
+}
+
+#menu{
+	float:right;
+}
+
+#menu a{
+	text-align: right;
+	padding: 0 10px 0 10px;
+	font-size: 15px;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 1px 1px #111111;
+}
+
+#menu a:hover{
+	background-color: #696969;
+	color: white;
+}
+
+#nome h1{
+	text-align: center;
+}
+
+#logo{
+	align-self: center;
+	max-height: 100px;
+}
+
+#logo img{
+	max-height: 60px;
+	padding: 5px;
+}
+
+#formulario{
+	margin: 2%; 
+}
+
+#formulario label{
+	padding: 1%;
+}
+
+#faixa{
+	background-color: #0559A4;
+	height: 40px;
+}

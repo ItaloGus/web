@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistema de Cadastro</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div id="menu">
+			<a href="#">Contatos</a>
+			<a href="#">Nos Conheça</a>
+			<a href="#">Depoimentos</a>
+			<a href="#">Sugestões</a>
+		</div>
+	</header>
+
+		<div id="nome">
+			<h1>Sistema de Cadastro de Doação</h1>
+    </div>
+    
+    <div id="formulario">
+      <form>
+        
+        <fieldset>
+          <legend>Informações Pessoais</legend>
+            <label for="">Nome Completo:</label>
+            <input type="text" name="nome" placeholder="Pessoa que receberá a doação" size="40px" maxlength="100px">
+            <label for="">Data de Nascimento:</label>
+            <input type="date" name="data">
+            <label for="">Idade:</label>
+            <input type="number" name="idade">
+        
+            <br><br>
+            <label for="">RG:</label>
+            <input type="number" name="RG">
+            <label for="">CPF:</label>
+            <input type="number" name="CPF">
+            <label for="">Naturalidade</label>  
+            <input type="text" name="naturalidade" placeholder="País de Origem">
+            <label for="">Nome do Companheiro(a)</label>
+            <input type="text" name="companheiro" size="40px" maxlength="100px">
+       </fieldset>
+
+        <fieldset>
+          <legend>Informações para Contato</legend>
+          <label for="">Contato Principal:</label>
+          <input type="number" name="Contato1" placeholder="(999)99999-9999">
+          <label for="">Contato Reserva:</label>
+          <input type="number" name="Contato2" placeholder="(999)99999-9999">
+          <label for="">Endereço</label>
+          <input type="text" name="endereco">
+          <label for="">Ponto de Referência</label>
+          <input type="text" name="referencia">
+        </fieldset>
+
+        <fieldset>
+          <legend>Outras Informações</legend>
+          <label for="">Profissão</label>
+          <input type="text" name="profissao">
+          <label for="">Renda Mensal</label>
+          <input type="number" name="renda" placeholder="R$9999,99">
+          
+          <label for="">Grau de Escolaridade</label>
+          <select name="escolaridade">
+            <option value="">Analfabeto</option>
+            <option value="">Fundamental Incompleto</option>
+            <option value="">Fundamental Completo</option>
+            <option value="">Ensino Medio Incompleto</option>
+            <option value="">Ensino Medio Completo</option>
+            <option value="">Superior Incompleto</option>
+            <option value="">Superior Completo</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Informações da Residência</legend>
+            <label for="">Você tem filhos?</label>
+            <label for="">Sim</label>
+            <input type="radio" name="filhos" value="sim">
+            <label for="">Não</label>
+            <input type="radio" name="filhos" value="nao">
+            <label for="">Se, sim quantos filhos?</label>
+            <input type="number" name="NFilhos" placeholder="0">
+
+            <br><br><label for="">Faixa Etária:</label><br>
+            <label for="">0 á 10 anos</label>
+            <input type="checkbox" name="IFilhos" value="1">
+            <label for="">11 á 17 anos</label>
+            <input type="checkbox" name="IFilhos" value="2">
+            <label for="">18 anos ou MAIS</label>
+            <input type="checkbox" name="IFilhos" value="3">
+           
+            <br><br><label for="">Possui Bolsa Família?</label>
+            <label for="">Sim</label>
+            <input type="radio" name="bolsa" value="sim">
+            <label for="">Não</label>
+            <input type="radio" name="bolsa" value="nao">
+
+            <label for="">Mora em casa própria:</label>
+            <label for="">Sim</label>
+            <input type="radio" name="casa" value="sim">
+            <label for="">Não</label>
+            <input type="radio" name="casa" value="nao">
+
+            <br><br><label for="">Quantas pessoas moram na sua residência?</label>
+            <input type="number" name="NMoram" placeholder="0" width="20px" maxlength="1px">
+
+            <label for="">Quantas pessoas estudam na sua residência?</label>
+            <input type="number" name="NEstudam" placeholder="0">
+
+            <label for="">Quantas pessoas trabalham na sua residência?</label>
+            <input type="number" name="NTrabalham" placeholder="0">
+
+            <br><br> <label for="">Há caso de doença fisica ou mental na sua familia?</label>
+            <label for="">Sim</label>
+            <input type="radio" name="doenca" value="sim">
+            <label for="">Não</label>
+            <input type="radio" name="doenca" value="nao">
+
+            <br><br><label for="">Qual tipo de ajuda necessita?</label>
+            <label for="">Cesta Básica</label>
+            <input type="radio" name="doação" value="cesta">
+            <label for="">Cadeira de Rodas</label>
+            <input type="radio" name="doação" value="rodas">
+            <label for="">Cadeira de Banho</label>
+            <input type="radio" name="doação" value="banho">
+            <label for="">Outros</label>
+            <input type="radio" name="doação" value="outros">
+            <br><br><label for="">Obs:</label>
+            <input type="text" name="obs" size="190%">
+          </fieldset>
+     
+      </form>
+    </div>
+
+</body>
+
+<footer>
+  <div id="faixa"></div>
+	<div id="logo">
+		<p>REALIZADORES PARCEIROS DA AÇÃO SOCIAL</p>
+		<img src="facimlogo.png">
+		<img src="lionslogo.gif">
+		<img src="senailogo.png">
+	</div>
+</footer>
+</html>
